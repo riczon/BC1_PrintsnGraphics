@@ -1,0 +1,248 @@
+body {
+background-color: white;
+   }
+#header {
+	position: relative;
+	left: 20px;
+}
+#bg {
+	background-color: black;
+}
+/* Menu */
+ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: gold;
+   
+}
+
+li {
+    float:left;
+    position: relative;
+    left: 36.5%;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family:Tahoma;
+    color: rgb(128, 0 ,0);
+    font-style: oblique;
+}
+
+#slideshow {
+	background-color: white;
+}
+
+
+/* categories images */
+div.gallery {
+	margin: 35px;
+	border: 1px solid #ccc;
+	float: left;
+	position: relative;
+    left: 19%;
+	width: 200px;
+	
+}
+div.gallery:hover {
+	border: 1px solid #777;
+}
+div.gallery img {
+	width: 100%;
+	height: auto;
+}
+div.desc {
+	padding: 15px;
+	text-align: center;
+}
+/* Blinking */
+@keyframes blinker {  
+  from { visibility: visible }
+  to { visibility: hidden }
+
+  /* Alternatively you can do this:  
+  0% { visibility: visible; }
+  50% { visibility: hidden; }
+  100% { visibility: visible; }
+  if you don't want to use `alternate` */
+}
+.cursor {
+  animation: blinker steps(1) 500ms infinite alternate;
+}
+#blink {
+	color: red;
+}
+ 
+#satisfied {
+	background-color: gold;
+	border: 1px solid #ccc;
+	color: red;
+}
+
+#blank {
+	background-color: gold;
+	border: 1px solid #ccc;
+	padding: 15px;
+}
+
+div.marquee {
+    width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    animation: marquee 35s linear infinite;
+    font-family: "Bradley Hand ITC";
+    font-size: larger;
+}
+
+div.marquee:hover {
+    animation-play-state: paused
+}
+
+@keyframes marquee {
+    0%   { text-indent: 50em }
+    100% { text-indent: -105em }
+}
+
+
+#clients {
+  position:relative;
+  height:281px;
+  width:350px;
+  margin: auto;
+}
+
+#clients img {
+  position:absolute;
+  left: -360px;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#clients img.top:hover {
+  opacity:0;
+}
+
+
+
+/* Customers */
+@-webkit-keyframes blinker {
+  from {opacity: 1.0;}
+  to {opacity: 0.0;}
+}
+.blink{
+	text-decoration: blink;
+	-webkit-animation-name: blinker;
+	-webkit-animation-duration: 0.6s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:ease-in-out;
+	-webkit-animation-direction: alternate;
+	color: red;
+}
+
+h1 {
+	color: red;
+}
+
+#www {
+	color: blue;
+}
+/* Socail Networks */
+#mySidenav a {
+	position:fixed;
+    right: -85px;
+    transition: 0.3s;
+    border: 1px solid green;
+    padding: 7px;
+    padding-bottom: 3px;
+    padding-top: 7px;
+    width: 112px;
+    text-decoration: none;
+    color: white;
+    border-radius: 2 7px 7px 2;
+}
+
+#mySidenav a:hover {
+    right: 0px;
+}
+
+#tweeter {
+    top: 4px;
+    background-color: lightblue;
+}
+
+#facebook {
+    top: 50px;
+    background-color: #2196F3;
+}
+
+#email {
+    top: 95px;
+    background-color: #f44336;
+}
+
+
+
+/* Slides */
+<style>
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 900px;
+  position: relative;
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  position: relative;
+  left: -1%;
+  height: 8px;
+  width: 10px;
+  margin: 2px;
+  background-color: #bbb;
+  border-radius: 80%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 200px) {
+  .text {font-size: 11px}
+}
+</style>
+
+
+
